@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Li — AI Automation & Web Developer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { text-align: center; margin-bottom: 56px; }
+  header h1 { font-size: 2.4rem; margin-bottom: 8px; }
+  header h1 .accent { color: #58a6ff; }
+  header p.sub { color: #8b949e; font-size: 1.1rem; max-width: 620px; margin: 0 auto; }
+  .badges { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .badge { background: #161b22; border: 1px solid #30363d; border-radius: 20px; padding: 6px 16px; font-size: .85rem; color: #58a6ff; }
+  h2 { font-size: 1.5rem; margin: 48px 0 20px; border-bottom: 1px solid #21262d; padding-bottom: 10px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; }
+  .card h3 { font-size: 1.1rem; margin-bottom: 8px; color: #58a6ff; }
+  .card p { color: #8b949e; font-size: .95rem; }
+  .card .flow { margin-top: 12px; font-size: .85rem; color: #d2a8ff; font-family: monospace; }
+  .card .tags { margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 2px 10px; font-size: .75rem; color: #8b949e; }
+  ul.services { list-style: none; }
+  ul.services li { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 18px 24px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  ul.services li strong { display: block; margin-bottom: 4px; }
+  ul.services li span { color: #8b949e; font-size: .9rem; }
+  ul.services .eta { color: #3fb950; font-size: .85rem; white-space: nowrap; }
+  .cta { text-align: center; margin-top: 56px; background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 36px 24px; }
+  .cta h2 { border: none; margin: 0 0 12px; padding: 0; }
+  .cta p { color: #8b949e; margin-bottom: 20px; }
+  .btn { display: inline-block; background: #238636; color: #fff; text-decoration: none; padding: 12px 32px; border-radius: 8px; font-weight: 600; }
+  .btn:hover { background: #2ea043; }
+  footer { text-align: center; margin-top: 48px; color: #6e7681; font-size: .85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Li — <span class="accent">AI Automation</span> & Web Developer</h1>
+    <p class="sub">I build workflow automations and websites with AI assistance — fast turnaround, clean documentation, production-ready from day one.</p>
+    <div class="badges">
+      <span class="badge">⚡ 1–3 day delivery</span>
+      <span class="badge">🔧 n8n specialist</span>
+      <span class="badge">🌍 Remote / UTC+8</span>
+    </div>
+  </header>
+
+  <h2>Automation Templates</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>📧 Gmail → AI → Slack</h3>
+      <p>Incoming emails are triaged by AI, summarized, and routed to the right Slack channel — with urgent items escalated instantly.</p>
+      <div class="flow">Gmail → AI classify → Slack notify</div>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">OpenAI</span><span class="tag">Gmail API</span><span class="tag">Slack</span></div>
+    </div>
+    <div class="card">
+      <h3>🛡️ n8n Guardian</h3>
+      <p>Self-monitoring layer for n8n: watches every workflow execution and pushes Telegram alerts on failure — with error context and run links.</p>
+      <div class="flow">n8n executions → monitor → Telegram alert</div>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">Telegram</span><span class="tag">Error handling</span></div>
+    </div>
+    <div class="card">
+      <h3>📊 Sheets AI Tagging</h3>
+      <p>Rows added to Google Sheets are automatically enriched and tagged by AI, then written back — no manual labeling.</p>
+      <div class="flow">Sheets → AI enrich → Sheets write-back</div>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">Google Sheets</span><span class="tag">LLM</span></div>
+    </div>
+    <div class="card">
+      <h3>🤖 Custom AI Agents</h3>
+      <p>Lead qualification, research and outreach agents wired into your CRM — built on n8n + LangGraph with official APIs only.</p>
+      <div class="flow">Trigger → AI agent → CRM / outreach</div>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">LangGraph</span><span class="tag">CRM</span></div>
+    </div>
+  </div>
+
+  <h2>Services</h2>
+  <ul class="services">
+    <li><div><strong>Workflow automation</strong><span>n8n / Make builds, debugging, migration, API & webhook integrations</span></div><span class="eta">1–3 days</span></li>
+    <li><div><strong>Websites & landing pages</strong><span>Business sites, landing pages, responsive and fast</span></div><span class="eta">1–3 days</span></li>
+    <li><div><strong>Bug fixes & small tweaks</strong><span>WordPress / Elementor fixes, site repairs, quick improvements</span></div><span class="eta">Same day</span></li>
+    <li><div><strong>AI reporting pipelines</strong><span>Ads / analytics data → Sheets → dashboards → AI summaries by email</span></div><span class="eta">2–3 days</span></li>
+  </ul>
+
+  <div class="cta">
+    <h2>Have a project in mind?</h2>
+    <p>Send your requirements — I'll reply with a fixed price and delivery date, usually within a few hours.</p>
+    <a class="btn" href="mailto:hello@example.com">Get in touch</a>
+  </div>
+
+  <footer>© 2026 Li · Built with n8n-powered efficiency ⚡</footer>
+
+</div>
+</body>
+</html>
